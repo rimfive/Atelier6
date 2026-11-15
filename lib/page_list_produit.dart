@@ -1,28 +1,28 @@
 import 'package:flutter/material.dart';
 
-import 'models/produit.dart';
-import 'page_details_produit.dart';
+import 'models/produits.dart';
+import 'models/page_details_produit.dart';
 
 class listProduits extends StatelessWidget {
   listProduits({super.key});
 
-  final List<produits> produitsList = [
-    Produit(
+  final List<Produits> produits = [
+    Produits(
       nom: "Ordinateur portable",
       description: "Laptop puissant pour travail et gaming.",
       prix: 1200.0,
     ),
-    Produit(
+    Produits(
       nom: "Smartphone",
       description: "Téléphone nouelle generation avec trible camera.",
       prix: 1200.0,
     ),
-    Produit(
+    Produits(
       nom: "Smartphone",
       description: "Téléphone nouelle generation avec trible camera.",
       prix: 900.0,
     ),
-    Produit(
+    Produits(
       nom: "Casque Bluetooth",
       description: "Casque sans fil avec reduction de bruit.",
       prix: 150.0,
@@ -34,7 +34,7 @@ class listProduits extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text("Liste des produits")),
       body: ListView.builder(
-        itemCount: produitsList.length,
+        itemCount: produits.length,
         itemBuilder: (context, index) {
           final produit = produits[index];
           return Card(

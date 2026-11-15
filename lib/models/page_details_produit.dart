@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_produits/models/produits.dart';
 
-import 'models/produit.dart';
-
 class DetailsProduit extends StatelessWidget {
-  final produits produit;
+  final Produits produit;
   const DetailsProduit({super.key, required this.produit});
 
   @override
