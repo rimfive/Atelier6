@@ -22,10 +22,4 @@ class DetailsProduit extends StatelessWidget {
             Text("Prix: ${produit.prix}\$", style: TextStyle(fontSize: 18)),
             SizedBox(height: 5),
 
-            Text(produit.description, style: TextStyle(fontSize: 16)),
-          ],
-        ),
-      ),
-    );
-  }
-}
+           
